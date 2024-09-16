@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>Steam</title>
+    <link rel="icon" href="/ImageData/Steampng.jpeg" image/x-icon">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="login.css">
+        <script src="login.js"></script>
+
+        <nav style="background-color: #1b2838;">
+            
+        <div class="sign" style="padding-left: 15rem; display: flex; margin-left: 5rem;">
+            <a href="#"><img
+                class="logoBig" src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"></a> 
+                <button type="button" class="installbtn" onclick="location.href='https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe'" style="background-color:#5c7e10; border:none;color:#ffffff">
+                  <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/256/download--v1.png">Install
+                  Steam
+                </button>           
+        </div>
+          </nav>
+    </head>
+
+    <body id="transparentBG" style="background-color: #1b2838;" class="fade-in">
+      
+        <img style="position: absolute; height:300px; width: 800px; height:700px;visibility: hidden;" src="../../ImageData/games.jpg">
+
+        <form id="loginForm" action = "validate.php" onsubmit="return validation()" method="post" class="container smallFont fade-in">
+          
+          <div style="display: block;">
+
+            <label for="username"><b>Sign in with account name</b></label>
+            <input  type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input  type="password" placeholder="Enter Password" name="password" required>
+
+            <div class="sign" style="text-align: center; padding-top:0.1rem;">
+              <input type="submit" value="Sign in" name="submit" class="login-button" style="margin-left:1rem; color: whitesmoke; text-align: center; height:2rem; border:none; background-color: #5c7e10; border-color: #ffffff; border-radius: 15%;">
+            </div>
+            <div style="text-align: center; padding-top:0.1rem;">
+              <br>
+              <label class="smallFont"><a href="/Pages/Register/register.html">Not Registered?</a></label>
+            </div>
+        </div>
+        </form>
+   
+    </body>
+</html>
